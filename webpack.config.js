@@ -2,7 +2,7 @@ const path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var extractPlugin = new ExtractTextPlugin({
-   filename: 'Assets/css/bundle.css'
+   filename: '../css/bundle.css'
 });
 
 module.exports = {
@@ -11,23 +11,31 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'Assets/js'),
-        filename: 'app.bundle.js'
+        filename: 'app.bundle.js',
+        publicPath: '/Assets'
     },
     module:{
-        loaders: [
+        rules: [
             {
                 test: /\.js?$/, 
-                loader: 'babel-loader', 
-                exclude: /node_modules/,
-                query:{
-                    presets: ['env']
-                }
+                exclude: [/node_modules/],
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options:{
+                            presets: ['env']
+                        }
+                    }
+
+                ]
+
             },
             {
                 test: /\.scss$/,
                 exclude: [/node_modules/],
                 use: extractPlugin.extract({
-                use: ['css-loader', 'sass-loader']})
+                    use: ['css-loader', 'sass-loader']
+                })
                 
             }
 

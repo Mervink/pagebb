@@ -1,3 +1,4 @@
+import '../scss/main.scss';
 import { sosa, sosar } from './fetch';
 
 console.log("dsfdscxfdsfdsfdsvcxvcxvxcvcfdsf");

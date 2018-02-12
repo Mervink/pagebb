@@ -1,23 +1,8 @@
-$theme-1: (
-   container: (
-       bg: #e4ada7,
-       color: #000,
-       border-color: #000
-   ),
-   left: (
-       bg: #d88880,
-       color: #fff,
-       height: 100%,
-       width: 69%
-   ),
-   right: (
-       bg: #cc6359,
-       color: #fff,
-       height: 100%,
-       width: 29%
-   ),
-   button: (
-       bg: #481b16,
-       color: #fff
-   )
-);
+$left-bg: blue;
+
+body {
+    background-color: $left-bg;
+    height: 100%;
+    width: 69%;
+}
+
