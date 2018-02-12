@@ -1,5 +1,5 @@
-import { sosa, sosar } from './fetch';
+// import { sosa, sosar } from './fetch';
 
-// console.log("dsfdscxfdsfdsfdsvcxvcxvxcvcfdsf");
-let xo = new sosa("leon", "mwandiringa");
-console.log(xo.name+ " and "+ xo.namey());
+console.log("dsfdscxfdsfdsfdsvcxvcxvxcvcfdsf");
+// let xo = new sosa("leon", "mwandiringa");
+// console.log(xo.name+ " and "+ xo.namey());
