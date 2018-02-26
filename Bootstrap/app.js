@@ -14,10 +14,12 @@ const routes = require("../Routes/web.js");
 //run the app
 const app = express();
 
+
 //run global middlewares
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({exteded: false}));
+app.set("view engine", "ejs");
 
 //run the defined routes
 app.use("", routes);

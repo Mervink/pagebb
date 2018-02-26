@@ -10,7 +10,7 @@
 
         return (req, res)=>{
 
-                res.send("its working bro");
+                res.render("home");
         }
 
     }
