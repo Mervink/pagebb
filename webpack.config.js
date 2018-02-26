@@ -10,9 +10,9 @@ module.exports = {
         app: './Resources/js/app.js'
     },
     output: {
-        path: path.resolve(__dirname, 'Assets/js'),
+        path: path.resolve(__dirname, 'public/js'),
         filename: 'app.bundle.js',
-        publicPath: '/Assets'
+        publicPath: '/public'
     },
     module:{
         rules: [

@@ -1,8 +1,8 @@
 {
-  "name": "alender",
+  "name": "pagebb",
   "version": "1.0.0",
-  "description": "a es6, webpack, ejs and react starter",
-  "main": "app.js",
+  "description": "global cms endpoint system",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -12,7 +12,12 @@
   "author": "Leon Mwandiringa",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.0.7"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
