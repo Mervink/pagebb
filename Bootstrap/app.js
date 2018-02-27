@@ -16,10 +16,11 @@ const app = express();
 
 
 //run global middlewares
-app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({exteded: false}));
 app.set("view engine", "ejs");
+app.use(express.static('public'));
 
 //run the defined routes
 app.use("", routes);
