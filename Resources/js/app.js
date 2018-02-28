@@ -1,6 +1,12 @@
 import '../scss/main.scss';
-import { sosa, sosar } from './fetch';
+//import $ from 'jquery';
 
-console.log("dsfdscxfdsfdsfdsvcxvcxvxcvcfdsf");
-let xo = new sosa("leon", "mwandiringa");
-console.log(xo.name+ " and "+ xo.namey());
+function $(id) {
+    return document.getElementById(id);
+}
+  
+  dragula([$('avail-modules-source'), $('modules-target')], {
+    revertOnSpill: true,
+    copy: true
+  });
+  
