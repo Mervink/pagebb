@@ -1,4 +1,4 @@
-# alender
-webpack, scss, babel, react starter. just to make builds faster
+# PAGEBB
+webpack, scss, babel, react, Node Js, mongo, redis
 
-get all the dependacies and the boiler plate you need to speed up your dev process
+manage and deploy to any web stack anywhere, predefined components from different frameworks like materialize, mwf and bootstrap for building web pages. 
